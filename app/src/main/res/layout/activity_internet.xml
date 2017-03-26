@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_internet"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|center_vertical|center_horizontal"
+    android:layout_height="match_parent"
+    tools:context="com.honsol.avanisaanvividyamandir.internet">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/internet_03"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="#e93338"
+        android:textSize="18dp"
+        android:padding="5dp"
+        android:text="You are not connected to Internet. Try again after getting an Internet Connection."/>
+
+
+
+
+</LinearLayout>
