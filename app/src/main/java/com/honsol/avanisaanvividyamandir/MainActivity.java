@@ -11,32 +11,15 @@ import android.webkit.WebViewClient;
 
 public class MainActivity extends Activity {
 
-    private WebView webView;
+    private static final String ur_l = "http://www.vidyamandirshimla.com/";
     ProgressDialog prDialog;
-    private String url_ =  null;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         WebView webView = (WebView) findViewById(R.id.webview);
-        url_ = "http://www.vidyamandirshimla.com/";
-
-
-
-        /*WebSettings webSettings = webView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
-        webSettings.setDomStorageEnabled(true);
-        webSettings.setLoadWithOverviewMode(true);
-        webSettings.setUseWideViewPort(true);
-        webSettings.setBuiltInZoomControls(true);
-        webSettings.setDisplayZoomControls(false);
-        webSettings.setSupportZoom(true);
-        webSettings.setDefaultTextEncodingName("utf-8");
-        webView.loadUrl(url_);*/
-
         webView.setWebViewClient(new MyWebViewClient());
         webView.getSettings().setJavaScriptEnabled(true);
         webView.getSettings().setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);
@@ -48,7 +31,7 @@ public class MainActivity extends Activity {
         webView.getSettings().setDisplayZoomControls(false);
         webView.getSettings().setSupportZoom(true);
         webView.getSettings().setDefaultTextEncodingName("utf-8");
-        webView.loadUrl(url_);
+        webView.loadUrl(ur_l);
     }
 
     private class MyWebViewClient extends WebViewClient {
