@@ -11,7 +11,7 @@ import android.webkit.WebViewClient;
 
 public class MainActivity extends Activity {
 
-    private static final String ur_l = "http://www.vidyamandirshimla.com/";
+    private static final String ur_l = "http://vidyamandirshimla.com/m/";
     ProgressDialog prDialog;
 
 
